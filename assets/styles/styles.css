@@ -256,4 +256,28 @@ section {
 .main-section .right .form .newletter input:checked {
   accent-color: #ff8a00;
   color: white;
+}
+
+.second .main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  margin: 100px 0;
+  align-items: center;
+}
+.second .main .left h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.second .main .left h1 span.c {
+  color: #ff8a00;
+}
+.second .main .left h1 span.l {
+  color: #ff8a00;
+}
+.second .main .left p {
+  margin: 32px 0;
+  color: #000100;
+  opacity: 0.5;
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
