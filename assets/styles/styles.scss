@@ -13,6 +13,27 @@ body {
 img {
     width: 100%;
 }
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
 nav {
     background-color: #182469;
     color: white;
@@ -64,14 +85,18 @@ nav {
         font-weight: 600;
     }
 }
-
+section {
+    background-color: #182469;
+}
 .main-section {
     background-color: #182469;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 10%;
+    padding: 100px 0%;
     gap: 50px;
+    max-width: 1170px;
+    margin: 0 auto;
     .left {
         padding: 50px 0;
         display: flex;
@@ -111,7 +136,39 @@ nav {
     }
     .right {
         // padding: 0 50px;
+        position: relative;
+        .side {
+            position: absolute;
+            width: 5%;
+            display: none;
+        }
+        .side1 {
+            display: block;
+            left: 6%;
+            z-index: 1;
+            top: 20px;
+        }
+        .side2 {
+            display: block;
+            left: 6%;
+            z-index: 1;
+            bottom: 20px;
+        }
+        .side3 {
+            display: block;
+            right: 6%;
+            z-index: 1;
+            top: 20px;
+        }
+        .side4 {
+            display: block;
+            right: 6%;
+            z-index: 1;
+            bottom: 20px;
+        }
         .form {
+            position: relative;
+            z-index: 5;
             background-color: white;
             color: black;
             padding: 30px;
@@ -119,7 +176,7 @@ nav {
             width: 80%;
             margin: 0 auto;
             h1 {
-                font-weight: 400;
+                font-weight: 600;
             }
             p {
                 font-size: 14px;
@@ -147,12 +204,28 @@ nav {
                         display: flex;
                         gap: 20px;
                         .radio-button {
-                            display: flex;
                             width: 100%;
-                            border: 1px solid #7c7c7c;
-                            padding: 10px;
-                            border-radius: 10px;
-                            gap: 10px;
+                            label {
+                                gap: 10px;
+                                border: 2px solid #7c7c7c;
+                                padding: 10px;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 5px;
+                                i {
+                                    font-size: 18px;
+                                }
+                            }
+                            input[type="radio"] {
+                                display: none;
+                                opacity: 0;
+                            }
+                            input[type="radio"]:checked + label {
+                                border-color: $secondary-color;
+                                color: $secondary-color;
+                            }
                         }
                     }
                 }
@@ -167,7 +240,7 @@ nav {
                         font-weight: 600;
                         font-size: 14px;
                         border: none;
-                        border-radius: 5px;
+                        border-radius: 8px;
                     }
                 }
             }
@@ -176,6 +249,10 @@ nav {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                input:checked {
+                    accent-color: $secondary-color;
+                    color: white;
+                }
             }
         }
     }
