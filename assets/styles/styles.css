@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  background-color: #182469;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10%;
+  align-items: center;
+}
+nav .left {
+  display: flex;
+  align-items: center;
+}
+nav .left h1 {
+  margin-right: 30px;
+}
+nav .left ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 14px;
+}
+nav .left ul li {
+  margin: 0 20px;
+}
+nav button {
+  background-color: white;
+  border: none;
+  color: #182469;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-section {
+  background-color: #182469;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 10%;
+  gap: 50px;
+}
+.main-section .left {
+  padding: 50px 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.main-section .left .main-text {
+  height: 100%;
+}
+.main-section .left .main-text h1 {
+  font-size: 52px;
+  font-weight: 500;
+}
+.main-section .left .main-text h1 span {
+  position: relative;
+}
+.main-section .left .main-text h1 span::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #ff8a00;
+  position: absolute;
+  bottom: 5px;
+  z-index: 0;
+  border-radius: 10px;
+}
+.main-section .left .main-text p {
+  margin: 30px 0;
+  font-weight: 500;
+}
+.main-section .right .form {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-section .right .form h1 {
+  font-weight: 400;
+}
+.main-section .right .form p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.main-section .right .form form .form-card {
+  display: flex;
+  margin: 30px 0;
+  flex-direction: column;
+}
+.main-section .right .form form .form-card label {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.main-section .right .form form .form-card input {
+  padding: 10px 10px;
+  border-radius: 2px;
+  border: 1px solid #7c7c7c;
+  font-size: 16px;
+}
+.main-section .right .form form .form-card .radio-buttons {
+  display: flex;
+  gap: 20px;
+}
+.main-section .right .form form .form-card .radio-buttons .radio-button {
+  display: flex;
+  width: 100%;
+  border: 1px solid #7c7c7c;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+.main-section .right .form form .form-button {
+  width: 100%;
+  margin: 20px 0;
+}
+.main-section .right .form form .form-button button {
+  background-color: #ff8a00;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+.main-section .right .form .newletter {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=styles.css.map */
